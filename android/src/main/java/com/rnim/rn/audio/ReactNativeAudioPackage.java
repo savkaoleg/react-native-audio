@@ -11,7 +11,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class ReactNativeAudioPackage implements ReactPackage {
-
+    @Override
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Collections.emptyList();
+    }
 
     /**
      * @param reactContext react application context that can be used to create modules
